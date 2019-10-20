@@ -1,0 +1,26 @@
+html {
+    background-image: radial-gradient(circle, #58402D, #40241A);
+}
+
+body {
+    margin: 0;
+}
+
+.footerholder {
+    margin: 0;
+    background: none repeat scroll 0 0 black;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    background: none repeat scroll 0 0 black;
+    margin: auto;
+    width: 400px;
+}
+
+img {
+    display: none;
+}
