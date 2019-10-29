@@ -1,25 +1,10 @@
-basics:
-    ✔ add mouseover to ignite match @done(19-09-08 23:22)
-    ✔ register click to do action and pass the turn @done(19-09-08 23:46)
-    ✔ computer moves @done(19-09-19 01:10)
-    ✔ track who is playing @done(19-09-19 17:18)
-    ✔ game over (who wins) @done(19-09-27 16:23)
+game mechanics:
+    ☐ computer taunts text and indication that the computer plays now
+    ☐ randomize first player. only once there will be indication when the computer plays
+    ☐ make the total matches and allowed per turn configurable from the welcome page and then pass as URL arguments
 
-advanced:
-    ✔ matchstick animation @done(19-10-10 18:09)
-    ✔ all matches sprites should overlap - fix this in inkscape by creating a uniform size and alignment for all the images @done(19-10-16 18:52)
-    ✔ scale the canvas vertically to encompass all the matches @done(19-10-17 01:34)
-    ✔ space between matches should be relative @done(19-10-17 02:09)
-    ✔ background should be circular gradient with brown-black @done(19-10-10 18:09)
-    ☐ short pause between turns to show the user what the computer played
+polish:
+    ☐ new game button at game over
 
-final stuff:
-    ☐ automatic redraw on resize
-    ☐ check that on mobile the clicks work. and scrolling up and down
-    ☐ computer taunts text
-    
-extra:
-    ☐ intro
-    ☐ how to play
-    ☐ about
-    ☐ screensaver
+bugs:
+    ☐ text on `index.html` isn't formatted correctly and doesn't reflow on mobile

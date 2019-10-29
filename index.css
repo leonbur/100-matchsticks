@@ -3,24 +3,43 @@ html {
 }
 
 body {
-    margin: 0;
-}
-
-.footerholder {
-    margin: 0;
-    background: none repeat scroll 0 0 black;
-    bottom: 0;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-}
-
-footer {
-    background: none repeat scroll 0 0 black;
+    color: antiquewhite;
+    display: table;
     margin: auto;
-    width: 400px;
 }
 
-img {
-    display: none;
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: antiquewhite;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.multicolortext {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }

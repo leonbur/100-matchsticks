@@ -8,11 +8,11 @@ export class Match {
         this.size_y = size_y;
     }
 
-    isMouseover(mouse) {
-        return mouse.x >= this.pos_x &&
-            mouse.x <= this.pos_x + this.size_x &&
-            mouse.y >= this.pos_y &&
-            mouse.y <= this.pos_y + this.size_y;
+    isMouseover(x, y) {
+        return x >= this.pos_x &&
+            x <= this.pos_x + this.size_x &&
+            y >= this.pos_y &&
+            y <= this.pos_y + this.size_y;
     }
 
     draw(ctx, state) {

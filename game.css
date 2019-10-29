@@ -1,0 +1,16 @@
+html {
+    background-image: radial-gradient(circle, #58402D, #40241A);
+}
+
+body {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    display: none;
+}

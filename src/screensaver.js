@@ -1,44 +1,40 @@
-/* 
-screen saver
- */
-// const randomColor = () => {
-//     const r = Math.random() * 255
-//     const g = Math.random() * 255
-//     const b = Math.random() * 255
-//     return 'rgb(' + r + ',' + g + ',' + b + ')'
-// }
+export default async function Screensaver(ctx, initTimestamp, width, height, squareSize) {
+    const ts = initTimestamp;
+    function _randomColor() {
+        const r = Math.random() * 255
+        const g = Math.random() * 255
+        const b = Math.random() * 255
+        return 'rgb(' + r + ',' + g + ',' + b + ')'
+    }
 
-// let x = 0
-// let y = 0
-// let xd = 5
-// let yd = 5
+    let x = 0;
+    let y = 0;
+    let dx = squareSize;
+    let dy = squareSize;
 
+    const draw = (timestamp) => {
+        const amount = Math.floor((timestamp - initTimestamp) / 1000);
+        const result = [];
 
-// const animateScreenSaver = () => {
-//     requestAnimationFrame(animateScreenSaver)
+        for (let i = 0; i < amount; i++) {
+            ctx.fillStyle = _randomColor();
+            ctx.fillRect(x, y, dx, dy);
 
-//     c.fillStyle = randomColor()
-//     c.fillRect(x, y, xd, yd)
+            if (x > width || x < 0) {
+                dx = -dx
+            }
+            if (y > height || y < 0) {
+                dy = -dy
+            }
 
-//     if (x > innerWidth || x < 0) {
-//         xd = -xd
-//     }
-//     if (y > innerHeight || y < 0) {
-//         yd = -yd
-//     }
+            x += dx
+            y += dy
+        }
 
-//     x += xd
-//     y += yd
+        return result;
+    }
 
-//     // console.log(`x: ${x}, y: ${y}`)
-// }
-
-// window.addEventListener('resize', (event) => {
-//     canvas.width = window.innerWidth
-//     canvas.height = window.innerHeight
-
-//     // init()
-// })
-
-
-// animateScreenSaver()
+    return Object.freeze({
+        draw
+    });
+}

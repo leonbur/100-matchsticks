@@ -8,16 +8,37 @@
 </head>
 
 <body>
-    <img src="assets/images/unburnt.svg" id="unburnt">
-    <img src="assets/images/burning.svg" id="burning">
-    <img src="assets/images/burnt.svg" id="burnt">
-    <canvas></canvas>
-    <script src="src/game.js" type="module"  type="text/javascript"></script>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div style='text-align: center;'>
+                <h1 class="multicolortext" style="padding-top: 0.5em; font-size: 50px;">
+                    100 Matchsticks
+                </h1>
+            </div>
+            <pre style="font-size: 20px;">
+                    <b>How to play:</b>
+                    There are 100 matches on the table. A player, on their turn, burns up to 10 matches (and at least 1
+                    match).
+                    The winner is the player that burns the final match.
+            </pre>
+            <pre style="font-size: 20px; box-sizing: border-box;">
+                    <b>About this game:</b>
+                    My brother introduced me to programming when I was very little. 
+                    He coded this game in it's text version in Turbo Pascal for school and I got to sit around and watch the magic happens (and even make suggestions!).
+                    His old code is long lost so I decided to recreate the game for his 41st birthday.
+
+                    (And, learn a bit of basic JavaScript on the way.)
+            </pre>
+            <div style="text-align: center;">
+                <button onclick="window.location.href = 'game.html';">Play</button>
+            </div>
+        </div>
+        <footer id="footer">
+            <div style="text-align: center;">
+                <font color="grey"> Created with <font color="red">❤</font> for my brother, Michael. </font>
+            </div>
+        </footer>
+    </div>
 </body>
-<!-- <div id="footerholder"> 
-    <footer>
-        Created with ❤ for my brother, Michael.
-    </footer> 
- </div> -->
 
 </html>
