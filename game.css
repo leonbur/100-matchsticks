@@ -7,8 +7,12 @@ body {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: grey;
 }
 
 img {

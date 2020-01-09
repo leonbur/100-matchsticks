@@ -5,6 +5,3 @@ game mechanics:
 
 polish:
     ☐ new game button at game over
-
-bugs:
-    ☐ text on `index.html` isn't formatted correctly and doesn't reflow on mobile
